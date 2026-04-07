@@ -1,2 +1,2 @@
-# sr-playground
+# Screen Reader Playground
 Interactive tool used to support first-time screen reader users through common web experiences.
