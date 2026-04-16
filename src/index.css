@@ -15,6 +15,43 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
+  /* Semantic colour tokens */
+  --color-input-border: #767676;
+  --color-input-border-focus: var(--accent);
+  --color-error: #c0392b;
+  --color-error-bg: #fdf2f2;
+  --color-error-border: #e74c3c;
+  --color-success: #1a7a4a;
+  --color-tip-bg: var(--accent-bg);
+  --color-tip-border: var(--accent-border);
+
+  /* Spacing scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Layout tokens */
+  --layout-step-max-width: 680px;
+  --layout-step-padding: var(--space-2xl) var(--space-xl);
+
+  /* Shape tokens */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Interactive element tokens */
+  --size-touch-target: 44px;
+  --focus-ring: 0 0 0 3px var(--accent);
+
+  /* Typography tokens */
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-heading-step: 32px;
+
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
@@ -43,6 +80,12 @@
     --social-bg: rgba(47, 48, 58, 0.5);
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+    --color-input-border: #9ca3af;
+    --color-error: #f87171;
+    --color-error-bg: #2c1f1f;
+    --color-error-border: #f87171;
+    --color-success: #34d399;
   }
 
   #social .button-icon {
@@ -64,6 +107,18 @@
 
 body {
   margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 h1,
